@@ -1,0 +1,5 @@
+USING NIMBUS:
+
+Mounting the volume:
+
+	sudo mount /dev/vdc ~/storage

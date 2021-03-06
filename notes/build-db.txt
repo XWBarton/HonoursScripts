@@ -1,0 +1,40 @@
+How to build a database for the use of Kraken2:
+
+In order to build a kraken database you must perform three steps:
+
+1. Download taxonomy
+	- This downloads all the genera metadata etc from NCBI so things can be classified
+	- The command is: 
+	- kraken2-build --download-taxonomy --db [YOUR_DB_NAME]
+
+2. Add genomes to library
+	- Genomes can be added to the library in 2 ways:
+
+		- You can add one of the standard genomes sets using the command:
+		- kraken2-build --download-library [YOUR_CHOICE_OF_SET] --db [YOUR_DB_NAME]
+		- Your choice of sets include:
+			- archea
+			- bacteria
+			- plasmid
+			- viral
+			- human
+			- fungi
+			- plant
+			- protozoa
+			- and others which can be found in the Kraken2 manual: https://github.com/DerrickWood/kraken2/wiki/Manual#classification
+
+		- You can also add your own genomes:
+		- If the files have been downloaded directly of NCBI theoretically* you wont have to reformat them *THEORETICALLY
+		- The command is:
+		- kraken2-build --add-to-library [LOCATION_OF_YOUR_GENOME] --db [YOUR_DB_NAME]
+
+3. Build database from library
+	- This is now executing the construction of the kraken database from all of the genomes you just added to your library
+	- This may take a long time depeding on how powerful your computer is and how many files are in your library 
+	- The command is:
+	- kraken2-build --build --db [YOUR_DB_NAME] 
+
+Notes:
+
+- [YOUR_DB_NAME] is basically just a name of a folder that you have created, where you want to put all of this info or your data-base
+

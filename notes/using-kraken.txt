@@ -1,0 +1,16 @@
+How to use Kraken2:
+
+This is easier than building the database, so if you have gotten this far you're good.
+
+The command is:
+
+ kraken2 --db [path to your kraken database] --threads 12 --gzip-compressed --report [path where you want to save report] [path to your data]
+
+Notes:
+
+- If your sequences are gzipped then put this (--gzip-compressed) in the command otherwise just leave it out
+- If you are using a fancy computer with lots of threads you can specify how many to use e.g. (--threads 12), the more threads you use the 
+  quicker it will take, if you leave this option out it will only use 1 thread by default (which is fine).
+- The path to your data will be somthing like ~/home/user/documents/data/reads.fna.gz
+- You will also want to add a report option to save what kraken finds, use --report and then the path / folder that you want to save your report file,
+  you will want it to look somthing like this "-- report ~/home/user/documents/reports/kraken-reads-report.txt"

@@ -1,0 +1,15 @@
+COMMANDS:
+
+Running Kraken2:
+
+	kraken2 --db [database] --threads [number] --report [report file] [data] 
+
+Alignment Statistics on bam Files:
+
+	samtools flagstat mappingOutput.bam
+
+TO USE BOWTIE2:
+
+	bowtie2 -x ~/path to index reference genome -1 <forward reads> \ -2 <reverse reads> -S outputfilenname.sam
+
+	(or use -U instead of -1 \ -2 if using unpaired reads)

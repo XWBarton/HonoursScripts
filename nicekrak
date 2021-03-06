@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "Where is the report?"
+
+	read -e REPORT
+        eval REPORT=$REPORT
+	echo $REPORT
+
+#REPORT=~/reports/kraken/final/lane1/kraken_tick-db_lane1.txt
+
+#echo "Save location:"
+
+#	read -e SAVE
+
+#echo "Name of save:"
+
+#	read -e NAME
+
+# takes rows with a G in the fourth column
+# of those, prints the 1st (%) 2nd (number of reads) and 6th (genus) column
+# sorts number of reads classified highest lowest
+# removes unclassified categories
+# saves file
+
+awk -e '$4 ~ /G/ {print $1, $2, $6}' $REPORT | sort -n -k 2 | sed '/unclass/d' #> ~/reports/kraken/final/lane1/test.txt
+
+echo "Percentage Tick:"
+awk -e '$6 ~ /Ixodida/ {print $1, $2, $6}' $REPORT
+
