@@ -36,8 +36,8 @@ kraken2-build --download-library protozoa --threads $THREADS --db $DB
 
 # Downloading / Unzipping / Renaming Tick Genomes
 
-wget -P $GENOMES/tick https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/892/825/GCF_002892825.2_ISE6_asm2.2_deduplicated/GCF\
-_002892825.2_ISE6_asm2.2_deduplicated_genomic.fna.gz
+wget -P $GENOMES/tick https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/892/825/GCF_002892825.2_ISE6_asm2.2_deduplicated/\
+GCF_002892825.2_ISE6_asm2.2_deduplicated_genomic.fna.gz
 gunzip $GENOMES/tick/GCF_002892825.2_ISE6_asm2.2_deduplicated_genomic.fna.gz
 cp $GENOMES/tick/GCF_002892825.2_ISE6_asm2.2_deduplicated_genomic.fna $GENOMES/tick/I.scapularis.fna
 rm $GENOMES/tick/GCF_002892825.2_ISE6_asm2.2_deduplicated_genomic.fna
@@ -51,8 +51,8 @@ rm $GENOMES/tick/GCF_013339695.1_ASM1333969v1_genomic.fna
 wget -P $GENOMES/tick https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/013/339/725/GCF_013339725.1_ASM1333972v1/GCF\
 _013339725.1_ASM1333972v1_genomic.fna.gz
 gunzip $GENOMES/tick/GCF_013339725.1_ASM1333972v1_genomic.fna.gz
-cp $GENOMES/tick-db-genomes/tick/GCF_013339725.1_ASM1333972v1_genomic.fna $GENOMES/tick/R.microplus.fna
-rm $GENOMES/tick-db-genomes/tick/GCF_013339725.1_ASM1333972v1_genomic.fna
+cp $GENOMES/tick/GCF_013339725.1_ASM1333972v1_genomic.fna $GENOMES/tick/R.microplus.fna
+rm $GENOMES/tick/GCF_013339725.1_ASM1333972v1_genomic.fna
 
 wget -P $GENOMES/tick https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/358/835/GCA_013358835.1_BMI_IPER_1.0/\
 GCA_013358835.1_BMI_IPER_1.0_genomic.fna.gz
@@ -81,8 +81,8 @@ rm $GENOMES/tick/GCA_013339765.1_ASM1333976v1_genomic.fna
 wget -P $GENOMES/tick https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/339/685/GCA_013339685.1_ASM1333968v1/\
 GCA_013339685.1_ASM1333968v1_genomic.fna.gz
 gunzip $GENOMES/tick/GCA_013339685.1_ASM1333968v1_genomic.fna.gz
-cp $GENOMEStick/GCA_013339685.1_ASM1333968v1_genomic.fna $GENOMES/tick/H.asiaticum.fna
-rm $GENOMES/tick-db-genomes/tick/GCA_013339685.1_ASM1333968v1_genomic.fna
+cp $GENOMES/tick/GCA_013339685.1_ASM1333968v1_genomic.fna $GENOMES/tick/H.asiaticum.fna
+rm $GENOMES/tick/GCA_013339685.1_ASM1333968v1_genomic.fna
 
 wget -P $GENOMES/tick https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/436/015/GCA_013436015.1_TxGen_Rann/\
 GCA_013436015.1_TxGen_Rann_genomic.fna.gz
