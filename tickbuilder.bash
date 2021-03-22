@@ -12,7 +12,7 @@ echo "Building tick-db..."
 # Making file system for database and genome storage
 
 mkdir ~/storage/kraken
-mkdir ~/storage/kraken/tick-db
+mkdir ~/storage/kraken/tick+human-db
 mkdir ~/storage/kraken/tick-db-genomes
 mkdir ~/storage/kraken/tick-db-genomes/tick
 mkdir ~/storage/kraken/tick-db-genomes/marsupial
