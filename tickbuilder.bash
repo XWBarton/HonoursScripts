@@ -110,6 +110,48 @@ gunzip $GENOMES/marsupial/GCA_000004035.1_Meug_1.1_genomic.fna.gz
 cp $GENOMES/marsupial/GCA_000004035.1_Meug_1.1_genomic.fna $GENOMES/marsupial/N.eugenii.fna
 rm $GENOMES/marsupial/GCA_000004035.1_Meug_1.1_genomic.fna
 
+wget -P $GENOMES/marsupial/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/904/813/085/GCA_904813085.1_ERS5079773_MarsupialExonCaptKit/\
+GCA_904813085.1_ERS5079773_MarsupialExonCaptKit_genomic.fna.gz
+gunzip $GENOMES/marsupial/GCA_904813085.1_ERS5079773_MarsupialExonCaptKit_genomic.fna.gz
+cp $GENOMES/marsupial/GCA_904813085.1_ERS5079773_MarsupialExonCaptKit_genomic.fna $GENOMES/marsupial/I.obesulus.fna
+rm $GENOMES/marsupial/GCA_904813085.1_ERS5079773_MarsupialExonCaptKit_genomic.fna
+
+wget -P $GENOMES/marsupial/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/904/812/355/GCA_904812355.1_ERS5079696_MarsupialExonCaptKit/\
+GCA_904812355.1_ERS5079696_MarsupialExonCaptKit_genomic.fna.gz
+gunzip $GENOMES/marsupial/GCA_904812355.1_ERS5079696_MarsupialExonCaptKit_genomic.fna.gz
+cp $GENOMES/marsupial/GCA_904812355.1_ERS5079696_MarsupialExonCaptKit_genomic.fna $GENOMES/marsupial/P.xanthopus.fna
+rm $GENOMES/marsupial/GCA_904812355.1_ERS5079696_MarsupialExonCaptKit_genomic.fna
+
+wget -P $GENOMES/marsupial/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/904/811/015/GCA_904811015.1_ERS5079592_MarsupialExonCaptKit/\
+GCA_904811015.1_ERS5079592_MarsupialExonCaptKit_genomic.fna.gz
+gunzip $GENOMES/marsupial/GCA_904811015.1_ERS5079592_MarsupialExonCaptKit_genomic.fna.gz
+cp $GENOMES/marsupial/GCA_904811015.1_ERS5079592_MarsupialExonCaptKit_genomic.fna $GENOMES/marsupial/I.auratus.fna
+rm $GENOMES/marsupial/GCA_904811015.1_ERS5079592_MarsupialExonCaptKit_genomic.fna
+
+wget -P $GENOMES/marsupial/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/904/812/665/GCA_904812665.1_ERS5079734_MarsupialExonCaptKit/\
+GCA_904812665.1_ERS5079734_MarsupialExonCaptKit_genomic.fna.gz
+gunzip $GENOMES/marsupial/GCA_904812665.1_ERS5079734_MarsupialExonCaptKit_genomic.fna.gz
+cp $GENOMES/marsupial/GCA_904812665.1_ERS5079734_MarsupialExonCaptKit_genomic.fna $GENOMES/marsupial/P.brachyotis.fna
+rm $GENOMES/marsupial/GCA_904812665.1_ERS5079734_MarsupialExonCaptKit_genomic.fna
+
+wget -P $GENOMES/marsupial/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/904/811/065/GCA_904811065.1_ERS5079590_MarsupialExonCaptKit/\
+GCA_904811065.1_ERS5079590_MarsupialExonCaptKit_genomic.fna.gz
+gunzip $GENOMES/marsupial/GCA_904811065.1_ERS5079590_MarsupialExonCaptKit_genomic.fna.gz
+cp $GENOMES/marsupial/GCA_904811065.1_ERS5079590_MarsupialExonCaptKit_genomic.fna $GENOMES/marsupial/I.macrourus.fna
+rm $GENOMES/marsupial/GCA_904811065.1_ERS5079590_MarsupialExonCaptKit_genomic.fna
+
+wget -P $GENOMES/marsupial/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/904/811/895/GCA_904811895.1_ERS5079657_MarsupialExonCaptKit/\
+GCA_904811895.1_ERS5079657_MarsupialExonCaptKit_genomic.fna.gz
+gunzip $GENOMES/marsupial/GCA_904811895.1_ERS5079657_MarsupialExonCaptKit_genomic.fna.gz
+cp $GENOMES/marsupial/GCA_904811895.1_ERS5079657_MarsupialExonCaptKit_genomic.fna $GENOMES/marsupial/T.arnhemensis.fna
+rm $GENOMES/marsupial/GCA_904811895.1_ERS5079657_MarsupialExonCaptKit_genomic.fna
+
+wget -P $GENOMES/marsupial/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/900/497/805/GCF_900497805.2_bare-nosed_wombat_genome_assembly/\
+GCF_900497805.2_bare-nosed_wombat_genome_assembly_genomic.fna.gz
+gunzip $GENOMES/marsupial/GCF_900497805.2_bare-nosed_wombat_genome_assembly_genomic.fna.gz
+cp $GENOMES/marsupial/GCF_900497805.2_bare-nosed_wombat_genome_assembly_genomic.fna $GENOMES/marsupial/V.ursinus.fna
+rm $GENOMES/marsupial/GCF_900497805.2_bare-nosed_wombat_genome_assembly_genomic.fna
+
 # Adding genomes to library
 
 kraken2-build --add-to-library $GENOMES/tick/I.scapularis.fna --threads $THREADS --db $DB
@@ -135,6 +177,20 @@ kraken2-build --add-to-library $GENOMES/marsupial/P.cinereus.fna --threads $THRE
 kraken2-build --add-to-library $GENOMES/marsupial/S.harrisii.fna --threads $THREADS --db $DB
 
 kraken2-build --add-to-library $GENOMES/marsupial/N.eugenii.fna --threads $THREADS --db $DB
+
+kraken2-build --add-to-library $GENOMES/marsupial/V.ursinus.fna --threads $THREADS --db $DB
+
+kraken2-build --add-to-library $GENOMES/marsupial/T.arnhemensis.fna --threads $THREADS --db $DB
+
+kraken2-build --add-to-library $GENOMES/marsupial/I.macrourus.fna --threads $THREADS --db $DB
+
+kraken2-build --add-to-library $GENOMES/marsupial/P.brachyotis.fna --threads $THREADS --db $DB
+
+kraken2-build --add-to-library $GENOMES/marsupial/I.auratus.fna --threads $THREADS --db $DB
+
+kraken2-build --add-to-library $GENOMES/marsupial/P.xanthopus.fna --threads $THREADS --db $DB
+
+kraken2-build --add-to-library $GENOMES/marsupial/I.obesulus.fna --threads $THREADS --db $DB
 
 #kraken2-build --add-to-library  --threads $THREADS --db $DB
 
