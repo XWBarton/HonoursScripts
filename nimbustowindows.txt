@@ -1,0 +1,9 @@
+Transfering a file from Nibus (UNIX) to local Windows computer.
+
+Do this on the local windows powershell.
+
+tick-machine.pem ubuntu@146.118.67.41:/home/xbarton/[PATH TO FILE TO TRANSFER]C:\Users\xavie\OneDrive\Documents
+
+e.g.
+
+tick-machine.pem ubuntu@146.118.67.41:/home/xbarton/storage/bowtie2/reports/lane1/fastq/5.1-lane1-H.longicornis_1.fastq C:\Users\xavie\OneDrive\Documents
