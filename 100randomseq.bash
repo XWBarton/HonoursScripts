@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Script to extract 100 lines from NGS fasta or fastq files and run them through blast
+#Script to extract 100 sequences from NGS fasta or fastq files to run them through BLAST
 
 #Input NGS Sequences
 
