@@ -33,11 +33,11 @@ while [ $(($NUMBER%2)) -eq 0 ]
 
 #End Number Calculation
 
-if [[ $SEQ == *.txt ]]
+if [[ $SEQ == *.fastq ]]
 	then
-	ENDNUM=$(expr $NUMBER + 401)
+	ENDNUM=$(expr $NUMBER + 399)
 	else
-	ENDNUM=$(expr $NUMBER + 201)
+	ENDNUM=$(expr $NUMBER + 199)
 fi
 
 echo Picking 100 sequences from lines $NUMBER to $ENDNUM.
