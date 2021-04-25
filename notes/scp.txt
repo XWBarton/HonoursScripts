@@ -1,0 +1,8 @@
+WINDOWS TO UNIX
+
+scp -i tick-machine.pem C:\Users\xavie\Documents\usearch9.2_linux64 ubuntu@146.118.67.41:
+
+UNIX TO WINDOWS
+
+scp -i C:\Users\xavie\Documents\Pawsey\keypairs\tick-machine.pem ubuntu@146.118.67.41:\
+/home/xbarton/storage/SRA/R.linnaei/trim/fasta/R.linnaei_trim_1.fasta C:\Users\xavie\OneDrive\Documents
