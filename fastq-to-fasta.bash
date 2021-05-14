@@ -19,7 +19,7 @@ echo Input fastq file:
 	read -e FASTQ
 	eval FASTA=$FASTQ
 
-echo Output fasta name:
+echo Output fasta file:
 	read FASTA
 
 echo Converting...
